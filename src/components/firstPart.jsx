@@ -15,7 +15,7 @@ const list = [
 
 export const FirstPart = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className=" flex-col items-center hidden md:flex">
       <Divider text="What Club members  will do" />
 
       <div className="flex flex-row justify-around h-[600px] w-[95vw] items-center">

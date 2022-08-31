@@ -6,6 +6,7 @@ module.exports = {
         maze: 'Maze',
         bebas: 'BebasNeue',
         roboto: 'roboto',
+        courier: 'Courier',
       },
       maxWidth: {
         Wgee: '1300px',
