@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+
+import Loading from '../../public/assets/IMG_3726.GIF'
+
 export default function Done() {
   const ran_num = Math.floor(Math.random() * 2000) + 1400
   const [showElement, setShowElement] = React.useState(true)
@@ -15,11 +19,7 @@ export default function Done() {
         <div>
           <div className="flex justify-center items-center flex-col h-screen">
             <p className="text-[30px] font-bebas">loading...</p>
-            <img
-              className="h-[300px] w-[400px]"
-              src="https://cdn.dribbble.com/users/600626/screenshots/2944614/loading_12.gif"
-              alt=""
-            />{' '}
+            <Image height={300} width={400} src={Loading}></Image>
           </div>
         </div>
       ) : (

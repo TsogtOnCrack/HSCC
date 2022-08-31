@@ -1,6 +1,4 @@
-import { Elderly, Sell } from '@mui/icons-material'
-import { FormControlLabel, Checkbox } from '@mui/material'
-import { useState } from 'react'
+import { Checkbox } from '@mui/material'
 
 export const ListComp = (props) => {
   const { text, className, index, checked } = props

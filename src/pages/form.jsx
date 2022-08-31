@@ -1,8 +1,5 @@
 import { Input } from '../components'
 import { Checkbox } from '@mui/material'
-import { SettingsApplicationsTwoTone } from '@mui/icons-material'
-import { useState } from 'react'
-import { useScrollBy } from 'react-use-window-scroll'
 import Link from 'next/link'
 
 import { useContext } from 'react'
