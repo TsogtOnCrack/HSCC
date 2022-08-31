@@ -11,10 +11,20 @@ import Win from '../../public/assets/win.png'
 import HobbyLogo from '../../public/assets/hobbylogo.png'
 
 const list = [
-  { text: 'Learn To Code', background: 'bg-[#D1E3E4]', image: Learn },
-  { text: 'Make Their Own Website', background: 'bg-[#0E5CCD]', image: Computer },
-  { text: 'Enter Competitions', background: 'bg-[#14B4B4]', image: Win },
-  { text: 'Make HOBBY SCHOOL’s Website', background: 'bg-[#FFE401]', image: HobbyLogo },
+  { text: 'Learn To Code', background: 'bg-[#D1E3E4]', image: Learn, desc: ['js', 'python', 'React'] },
+  {
+    text: 'Make Their Own Website',
+    background: 'bg-[#0E5CCD]',
+    image: Computer,
+    desc: ['personal Portfolio website', 'Mini Games'],
+  },
+  { text: 'Enter Competitions', background: 'bg-[#14B4B4]', image: Win, desc: ['HACKATHONS', 'olympiads'] },
+  {
+    text: 'Make HOBBY SCHOOL’s Website',
+    background: 'bg-[#FFE401]',
+    image: HobbyLogo,
+    desc: ['we will make the official hobbyschool website'],
+  },
 ]
 
 export default function Home() {
@@ -22,7 +32,7 @@ export default function Home() {
 
   if (typeof window !== 'undefined') {
     const setFixed = () => {
-      if (window.scrollY >= 200) {
+      if (window.scrollY >= 100) {
         setFix(true)
       } else {
         setFix(false)
@@ -37,7 +47,7 @@ export default function Home() {
     <div className=" flex flex-col items-center justify-center ">
       <Header fix={fix} />
 
-      <div className=" h-32"></div>
+      <div className=" h-[200px]"></div>
 
       <div className="visible md:invisible relative md:absolute z-0 md:-z-50 md:top-0 max-w-[95vw]  overflow-hidden">
         <Divider text="What Club members  will do" />
@@ -47,6 +57,7 @@ export default function Home() {
       </div>
 
       <FirstPart />
+      <div className="h-14 md:h-32"></div>
       <SecondPart />
     </div>
   )

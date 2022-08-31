@@ -31,7 +31,7 @@ export const MobileSwiper = (props: Props) => {
       {data.map((el) => {
         return (
           <SwiperSlide>
-            <Card m b image={el.image} back={el.background} text={el.text}></Card>{' '}
+            <Card m b image={el.image} back={el.background} text={el.text} desc= {el.desc}></Card>{' '}
           </SwiperSlide>
         )
       })}

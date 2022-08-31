@@ -17,7 +17,7 @@ export const Input = (props) => {
         onChange={onchange}
         type="text"
         placeholder={placeholder}
-        className={`w-[400px] h-[40px]  ${size == 'med' ? 'block' : 'hidden'} ${mainClass}`}
+        className={`md:w-[400px] w-[80vw] h-[40px]  ${size == 'med' ? 'block' : 'hidden'} ${mainClass}`}
       />
       <input
         value={val}

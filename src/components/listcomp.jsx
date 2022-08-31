@@ -18,7 +18,7 @@ export const ListComp = (props) => {
         }}
       />
       <div className="w-[10px]"></div>
-      <p className="font-roboto text-[30px] text-white">{text}</p>
+      <p className="font-roboto text-[20px] md:text-[30px] text-white">{text}</p>
     </div>
   )
 }
