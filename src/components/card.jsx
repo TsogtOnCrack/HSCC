@@ -1,5 +1,6 @@
 import { width } from '@mui/system'
 import Image from 'next/image'
+
 export const Card = (props) => {
   const { m = false, b = false, image, back, text, className, desc } = props
   return (
@@ -16,7 +17,7 @@ export const Card = (props) => {
       </div>
       <h1
         className={`font-roboto text-white text-center text-[25px] min-h-[75px] max-w-[275px] flex ${
-          m != true ? 'items-end' : 'items-center'
+          m == true ? 'items-end' : 'items-center'
         } `}
       >
         {text}
