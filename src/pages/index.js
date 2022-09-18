@@ -118,7 +118,7 @@ export default function Home() {
               })
             }}
             size="med"
-            placeholder="both Hobby School or Personal is fine  "
+            placeholder="both Hobby School or Personal is accepted "
           >
             Enter Email
           </Input>
