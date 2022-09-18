@@ -93,6 +93,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-row w-[80vw] flex-wrap justify-between ">
+        <div className='md:my-5 m-0'>
         <Input
           val={data.name}
           onchange={(event) => {
@@ -106,6 +107,7 @@ export default function Home() {
         >
           Enter Name
         </Input>
+        </div>
         <div className='my-5'>
           <Input
             val={data.email}
@@ -116,7 +118,7 @@ export default function Home() {
               })
             }}
             size="med"
-            placeholder="both Hobbyschool or Personal is fine  "
+            placeholder="both Hobby School or Personal is fine  "
           >
             Enter Email
           </Input>
@@ -172,7 +174,7 @@ export default function Home() {
             })
           }}
           size="big"
-          placeholder="enter text here"
+          placeholder="Enter text here"
         >
           Please tell me about your experience
         </Input>
