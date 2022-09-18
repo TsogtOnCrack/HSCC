@@ -18,22 +18,22 @@ import { useContext } from 'react'
 import { CartContext } from '../../context/maincontext'
 
 
-const list = [
-  { text: 'Learn To Code', background: 'bg-[#D1E3E4]', image: Learn, desc: ['js', 'python', 'React'] },
-  {
-    text: 'Make Their Own Website',
-    background: 'bg-[#0E5CCD]',
-    image: Computer,
-    desc: ['personal Portfolio website', 'Mini Games'],
-  },
-  { text: 'Enter Competitions', background: 'bg-[#14B4B4]', image: Win, desc: ['HACKATHONS', 'olympiads'] },
-  {
-    text: 'Make HOBBY SCHOOL’s Website',
-    background: 'bg-[#FFE401]',
-    image: HobbyLogo,
-    desc: ['we will make the official hobbyschool website'],
-  },
-]
+// const list = [
+//   { text: 'Learn To Code', background: 'bg-[#D1E3E4]', image: Learn, desc: ['js', 'python', 'React'] },
+//   {
+//     text: 'Make Their Own Website',
+//     background: 'bg-[#0E5CCD]',
+//     image: Computer,
+//     desc: ['personal Portfolio website', 'Mini Games'],
+//   },
+//   { text: 'Enter Competitions', background: 'bg-[#14B4B4]', image: Win, desc: ['HACKATHONS', 'olympiads'] },
+//   {
+//     text: 'Make HOBBY SCHOOL’s Website',
+//     background: 'bg-[#FFE401]',
+//     image: HobbyLogo,
+//     desc: ['we will make the official hobbyschool website'],
+//   },
+// ]
 
 // export default function Home() {
 //   const [fix, setFix] = useState(false)
