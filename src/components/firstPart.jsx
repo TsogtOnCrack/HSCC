@@ -1,10 +1,10 @@
 import { Divider } from './divider'
 import { Card } from './card'
 
-import Learn from './Learn.png'
-import Computer from './computer.png'
-import Win from './win.png'
-import HobbyLogo from './hobbylogo.png'
+// import Learn from './Learn.png'
+// import Computer from './computer.png'
+// import Win from './win.png'
+// import HobbyLogo from './hobbylogo.png'
 
 const list = [
   { text: 'Learn To Code', background: 'bg-[#D1E3E4]', image: Learn, desc: ['js', 'python', 'React'] },

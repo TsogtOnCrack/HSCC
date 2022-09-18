@@ -5,10 +5,10 @@ import { Divider } from '../components'
 
 import { MobileSwiper } from '../components/mobileSwiper/index'
 
-import Learn from '../components/Learn.png'
-import Computer from '../components/computer.png'
-import Win from '../components/win.png'
-import HobbyLogo from '../components/hobbylogo.png'
+// import Learn from '../components/Learn.png'
+// import Computer from '../components/computer.png'
+// import Win from '../components/win.png'
+// import HobbyLogo from '../components/hobbylogo.png'
 
 import { Input } from '../components'
 import { Checkbox } from '@mui/material'
