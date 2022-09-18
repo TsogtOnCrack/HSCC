@@ -1,5 +1,5 @@
 export const Input = (props) => {
-  const { size, children, placeholder, onchange, val } = props
+  const { size, children, placeholder, onchange, val, className } = props
 
   const med = size == 'med'
   const small = size == 'small'
@@ -10,7 +10,7 @@ export const Input = (props) => {
   console.log(med, small, big)
 
   return (
-    <div className={`flex my-5 ${size == 'small' ? 'flex-row items-center' : 'flex-col'}`}>
+    <div className={`flex ${size == 'small' ? 'flex-row items-center m-0' : 'flex-col '} ${className}` }>
       <h1 className="font-bebas text-[30px] text-white m-[10px]">{children}</h1>
       <input
         value={val}
@@ -24,7 +24,7 @@ export const Input = (props) => {
         onChange={onchange}
         type="text"
         placeholder={placeholder}
-        className={`w-[70px] h-[40px] ${size == 'small' ? 'block' : 'hidden'} ${mainClass}`}
+        className={`w-[70px] h-[40px] ${size == 'small' ? 'block' : 'hidden'} ${mainClass} `}
       />
       <textarea
         value={val}
