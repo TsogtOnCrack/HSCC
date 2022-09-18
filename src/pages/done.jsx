@@ -26,7 +26,7 @@ export default function Done() {
         <div className="flex justify-center items-center flex-col">
           <div className=" font-maze text-[100px] text-white">SENT!</div>
           <Link href="/">
-            <div className="cursor-pointer underline text-[#EDAE49]">return to homePage</div>
+            <div className="text-[#EDAE49] max-w-[80vw] text-center">your application will be reviewed, please stand by for an Email </div>
           </Link>
         </div>
       )}
