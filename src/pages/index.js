@@ -133,7 +133,7 @@ export default function Home() {
           })
         }}
         size="big"
-        placeholder="enter text here"
+        placeholder="Enter text here"
       >
         Why do you want to join?
       </Input>
