@@ -49,7 +49,7 @@ export const SecondPart = () => {
           )
         })}
       </div>
-      <Link href={ans ? '/form' : ''}>
+      <Link href={ans ? '/farm' : ''}>
         <div
           onClick={() => {
             console.log('check')

@@ -13,6 +13,7 @@ export default function Check() {
       grade: data.grade,
       email: data.email,
       reason: data.reason,
+      whatyouknow: data.whatyouknow ? data.whatyouknow : 'none',
       xp: data.xp ? data.xp : 'none',
     })
       .then(() => {})
@@ -27,6 +28,7 @@ export default function Check() {
   const Name = data.name
   const Grade = data.grade
   const Reason = data.reason
+  const Whatyouknow = data.whatyouknow
   const xp = data.xp
   return (
     <div className="w-scren h-screen bg-[#14B4B4] flex justify-center items-center flex-col">
@@ -36,6 +38,7 @@ export default function Check() {
           <p>name: {Name}</p>
           <p>Grade : {Grade}</p>
           <p>Reason : {Reason}</p>
+          <p className={`${xp ? 'block' : 'hidden'}`}>What else you can do : {Whatyouknow}</p>
           <p className={`${xp ? 'block' : 'hidden'}`}>XP : {xp}</p>
         </div>
       </div>
