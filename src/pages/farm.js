@@ -75,22 +75,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center mt-5">
-      <div className="w-[80vw]">
-        <Input
-          className={'m-0'}
-          val={data.grade}
-          onchange={(event) => {
-            setData({
-              ...data,
-              ['grade']: event.target.value,
-            })
-          }}
-          size="small"
-          placeholder="ex: 11c"
-        >
-          Enter Class
-        </Input>
-      </div>
+      
 
       <div className="flex flex-row w-[80vw] flex-wrap justify-between ">
         <div className='md:my-5 m-0'>
@@ -123,6 +108,22 @@ export default function Home() {
             Enter Email
           </Input>
         </div>
+        <div className="w-[80vw]">
+        <Input
+          className={'my-5'}
+          val={data.grade}
+          onchange={(event) => {
+            setData({
+              ...data,
+              ['grade']: event.target.value,
+            })
+          }}
+          size="small"
+          placeholder="ex: 4 a"
+        >
+          Enter Class
+        </Input>
+      </div>
       </div>
       <Input
         val={data.reason}
@@ -133,7 +134,7 @@ export default function Home() {
           })
         }}
         size="big"
-        placeholder="Enter text here"
+        placeholder="Please be descriptive in order to show your dedication and commitment, your answer will be the deciding factor for acceptance"
       >
         Why do you want to join?
       </Input>
@@ -147,7 +148,7 @@ export default function Home() {
           })
         }}
         size="big"
-        placeholder="This can be about anything, basically what else than coding are you interested in?"
+        placeholder="This can be about anything, basically what else than coding are you interested in? please be specific and descriptive"
       >
         tell me about your other skills
       </Input>

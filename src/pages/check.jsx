@@ -40,10 +40,13 @@ export default function Check() {
           <p>Reason : {Reason}</p>
           <p className={`${xp ? 'block' : 'hidden'}`}>What else you can do : {Whatyouknow}</p>
           <p className={`${xp ? 'block' : 'hidden'}`}>XP : {xp}</p>
+
+          <div className='h-5'></div>
+          <p className=' text-red-700'>*Note* your application is the deciding factor for being accepted.</p>
         </div>
       </div>
       <div className=" font-roboto text-[20px] flex flex-row w-[80vw] justify-around my-3">
-        <Link href={'/form'}>
+        <Link href={'/farm'}>
           <div className="cursor-pointer bg-red-500 p-1 rounded-[5px] text-white">i want to edit some stuff</div>
         </Link>
         <Link href="/done">
