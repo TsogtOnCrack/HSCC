@@ -152,6 +152,20 @@ export default function Home() {
       >
         tell me about your other skills
       </Input>
+      <Input
+        className = "w-[80vw]"
+        val={data.note}
+        onchange={(event) => {
+          setData({
+            ...data,
+            ['note']: event.target.value,
+          })
+        }}
+        size="big"
+        placeholder="This is optional leave it blank if nothing. You can ask questions here as well, I will respond via email"
+      >
+        Any note, or additional messages that you want to add
+      </Input>
 
       <div className="flex flex-row items-center text-white w-[80vw]">
         <Checkbox

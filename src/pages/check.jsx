@@ -14,6 +14,7 @@ export default function Check() {
       email: data.email,
       reason: data.reason,
       whatyouknow: data.whatyouknow ? data.whatyouknow : 'none',
+      note: data.note ? data.note : 'none',
       xp: data.xp ? data.xp : 'none',
     })
       .then(() => {})
@@ -29,16 +30,18 @@ export default function Check() {
   const Grade = data.grade
   const Reason = data.reason
   const Whatyouknow = data.whatyouknow
+  const Note = data.note
   const xp = data.xp
   return (
     <div className="w-scren h-screen bg-[#14B4B4] flex justify-center items-center flex-col">
       <div className="flex flex-row justify-center items-center">
         {' '}
         <div className="bg-[#D1E3E4] w-[80vw] h-[80vh] rounded-[20px] flex flex-col text-[30px] p-5 font-courier overflow-auto">
-          <p>name: {Name}</p>
-          <p>Grade : {Grade}</p>
-          <p>Reason : {Reason}</p>
-          <p className={`${xp ? 'block' : 'hidden'}`}>What else you can do : {Whatyouknow}</p>
+          <p className='py-2'>NAME: {Name}</p>
+          <p className='py-2'>GRADE : {Grade}</p>
+          <p className='py-2'>REASON : {Reason}</p>
+          <p className={`${Whatyouknow ? 'block' : 'hidden'}`}>OTHER THINGS YOU CAN DO: {Whatyouknow}</p>
+          <p className={`${Note? 'block' : 'hidden'}`}>EXTRA: {Note}</p>
           <p className={`${xp ? 'block' : 'hidden'}`}>XP : {xp}</p>
 
           <div className='h-5'></div>

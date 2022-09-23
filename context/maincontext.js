@@ -13,6 +13,7 @@ export const CartContextPrv = ({ children }) => {
       email: '',
       reason: '',
       whatyouknow:'',
+      note:'',
       xp: '',
     })
   }, [])
