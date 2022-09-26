@@ -45,7 +45,7 @@ export default function Page() {
         <div>
           <div className=" flex flex-row justify-start md:my-2">
             <h1 className=" font-bebas text-[#EDAE49] text-[25px] md:text-[30px] w-24  "> time:</h1>
-            <h1 className=" font-bebas text-white text-[20px] md:text-[25px] w-32 md:w-40 "> EVERY TUEsDAY</h1>
+            <h1 className=" font-bebas text-white text-[20px] md:text-[25px] w-32 md:w-40 "> EVERY Friday</h1>
             <h1 className=" font-sans text-white text-[18px] md:text-[20px]  "> 3:15 - 4:30</h1>
           </div>
           <div className=" flex flex-row justify-start md:my-2">
