@@ -49,7 +49,7 @@ export default function Form() {
             })
           }}
           size="med"
-          placeholder="both Hobbyschool or Personal is fine  "
+          placeholder="input an email you frequently check "
         >
           Enter Email
         </Input>

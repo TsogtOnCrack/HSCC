@@ -7,6 +7,8 @@ import schoolpic from './schoolpic.jpeg'
 import schoolpic2 from './schoolpic2.jpeg'
 import code from './code.jpeg'
 import Error from '../components/Error'
+import imgforproject from "../../public/assets/picforcodingprojects.png"
+import teampic from "../../public/assets/teampic.jpeg"
 
 export default function Page() {
   const [fix, setFix] = useState(false)
@@ -31,13 +33,18 @@ export default function Page() {
 
       <Divider text="What HSCC will do this year:" />
       <div className="md:my-[100px] my-[50px] flex flex-col justify-center px-5 md:p-0">
-        <Image className=" rounded-3xl" src={code} width="900px" height={'436px'}></Image>
+        <Image className=" rounded-3xl" src={code} width="700px" height={'436px'}></Image>
         <h1 className=" font-bebas text-white text-[30px] text-center"> Learn to code</h1>
       </div>
 
       <div className="md:my-[100px] my-[50px] flex flex-col justify-center px-5 md:p-0">
-        <Image className=" rounded-3xl" src={schoolpic2} width="900px" height={'436px'}></Image>
-        <h1 className=" font-bebas text-white text-[30px] text-center"> make hobby school's website</h1>
+        <Image className=" rounded-3xl" src={imgforproject} width="700px" height={'436px'}></Image>
+        <h1 className=" font-bebas text-white text-[30px] text-center"> make fun projects</h1>
+      </div>
+
+      <div className="md:my-[100px] my-[50px] flex flex-col justify-center px-5 md:p-0">
+        <Image className=" rounded-3xl" src={teampic} width="700px" height={'436px'}></Image>
+        <h1 className=" font-bebas text-white text-[30px] text-center">develop a comunity</h1>
       </div>
 
       <Divider text="Schedule / location" />
@@ -45,13 +52,13 @@ export default function Page() {
         <div>
           <div className=" flex flex-row justify-start md:my-2">
             <h1 className=" font-bebas text-[#EDAE49] text-[25px] md:text-[30px] w-24  "> time:</h1>
-            <h1 className=" font-bebas text-white text-[20px] md:text-[25px] w-32 md:w-40 "> EVERY Friday</h1>
+            <h1 className=" font-bebas text-white text-[20px] md:text-[25px] w-32 md:w-40 "> EVERY thursday</h1>
             <h1 className=" font-sans text-white text-[18px] md:text-[20px]  "> 3:15 - 4:30</h1>
           </div>
           <div className=" flex flex-row justify-start md:my-2">
             <h1 className=" font-bebas text-[#EDAE49] text-[25px] md:text-[30px] w-24  "> place:</h1>
             <h1 className=" font-bebas text-white text-[20px] md:text-[25px] w-32 md:w-40 "> Room</h1>
-            <h1 className=" font-sans text-white text-[18px] md:text-[20px]  "> 312</h1>
+            <h1 className=" font-sans text-white text-[18px] md:text-[20px]  "> not decided yet</h1>
           </div>
         </div>
       </div>
